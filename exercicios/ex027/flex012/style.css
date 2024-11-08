@@ -17,17 +17,34 @@ body {
 header {
     background-color: gray;
     color: white;
+    background: linear-gradient( to top, gray, rgba(211, 211, 211, 0.205));
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
-    
+    /* border: 1px dotted black; */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+    flex: 0 0 200px;
+}
+
+header > nav {
+    /* border: 1px dotted black; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 header > nav > a {
     background-color: black;
     color: white;
-    padding: 7px;
+    padding: 10px;
+    margin: 5px;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -35,10 +52,7 @@ header > nav > a {
 header > nav > a:hover {
     background-color: white;
     color: black;
-}
-
-header > nav {
-    padding-top: 10px;
+    transition: background-color .5s;
 }
 
 main {
