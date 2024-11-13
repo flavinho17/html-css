@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu FlexBox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <nav id="itens">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -22,6 +24,16 @@
         <h2>Teste de Flexbox</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempora repudiandae amet quam laudantium aut, id vel voluptates. Excepturi iure voluptas accusamus vel possimus minima dolore laboriosam optio perferendis voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolores ut a temporibus illo aliquid assumenda tempora quod, doloribus laboriosam nihil harum natus porro voluptas eos quia consequuntur. Et, facere.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid ex libero voluptatibus, veniam incidunt! Nesciunt qui tempore sunt rem nulla soluta excepturi quod assumenda reiciendis, magni eaque delectus reprehenderit.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos pariatur velit eligendi impedit incidunt ipsa quibusdam voluptatem laudantium tenetur provident eaque quam ea natus amet totam, porro voluptas sunt rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, labore. Tempore praesentium suscipit nobis maxime aliquam id reiciendis cumque mollitia laboriosam doloribus, libero voluptate? Enim assumenda asperiores libero eius quam.</p>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
