@@ -6,8 +6,9 @@
     <title>Menu FlexBox</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho ()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -20,7 +21,7 @@
             <a href="#">Opção 6</a>
         </nav>
     </header>
-    <main>
+    <main id="conteudo">
         <h2>Teste de Flexbox</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempora repudiandae amet quam laudantium aut, id vel voluptates. Excepturi iure voluptas accusamus vel possimus minima dolore laboriosam optio perferendis voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus dolores ut a temporibus illo aliquid assumenda tempora quod, doloribus laboriosam nihil harum natus porro voluptas eos quia consequuntur. Et, facere.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid ex libero voluptatibus, veniam incidunt! Nesciunt qui tempore sunt rem nulla soluta excepturi quod assumenda reiciendis, magni eaque delectus reprehenderit.</p>
@@ -32,6 +33,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 700) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>

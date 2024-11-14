@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Typical Device BreakPoints 
+-------------------------------
+Pequenas Telas: até 600px
+Celular: 600px - 768px
+Tablet: 768px - 992px
+Desktop: 992px - 1200px
+Grandes Telas: Acima de 1200px 
+*/
+
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+
+    i#burguer {
+        display: none;
+    }
+
+    header > nav {
+        display: block;
+    }
+
+    header > nav > a {
+        background-color: rgb(63, 63, 63);
+        display: inline-block;
+        margin: 2px;
+    }
+
+    main {
+        margin: auto;
+        margin-top: 10px;
+        width: 90vw;
+
+    
+    }
+
+    main > h2 {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    i#burguer {
+        display: none;
+    }
+    header {
+        display: flex;
+        height: 90px;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    header > h1 {
+        align-self: center;
+    }
+
+    nav {
+        display: block;
+        
+    }
+
+    header > nav > a {
+        background-color: rgb(63, 63, 63);
+        display: inline-block;
+        margin: 2px;
+    }
+
+    main {
+        margin: auto;
+        margin-top: 10px;
+        width: 50vw;
+    }
+
+    main > h2 {
+        text-align: start;
+    }
+
+}
