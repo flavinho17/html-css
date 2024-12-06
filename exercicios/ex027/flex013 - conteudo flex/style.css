@@ -12,4 +12,14 @@ body {
     line-height: 1.5em;
 }
 
-header
+header {
+    margin: 10px;
+}
+
+header > h1 {
+    padding-bottom: 10px;
+}
+
+section.flex-content {
+    background-color: lightgray;
+}
