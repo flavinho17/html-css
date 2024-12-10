@@ -13,13 +13,30 @@ body {
 }
 
 header {
-    margin: 10px;
+    margin: 20px;
 }
 
 header > h1 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+p {
+    text-align: justify;
 }
 
 section.flex-content {
     background-color: lightgray;
+    padding: 20px;
+}
+
+main > section > article > div.text > h2 {
+    padding-bottom: 20px;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer > h3 {
+    padding-bottom: 20px;
 }
