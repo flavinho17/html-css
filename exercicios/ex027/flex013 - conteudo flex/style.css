@@ -16,21 +16,58 @@ header {
     margin: 20px;
 }
 
-header > h1 {
+
+h1, h2, h3 {
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 p {
     text-align: justify;
 }
 
+h2#elemento {
+    padding-top: 10px;
+}
+
 section.flex-content {
     background-color: lightgray;
     padding: 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    
 }
 
-main > section > article > div.text > h2 {
-    padding-bottom: 20px;
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    
+}    
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 0 500px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 500px;
 }
 
 footer {
